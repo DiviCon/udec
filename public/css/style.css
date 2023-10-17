@@ -1,0 +1,114 @@
+@import url("//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
+
+body{
+    background:#f9f9f9;
+}
+
+/* Login Page */
+
+.login-block{
+    float:left;
+    width:100%;
+    padding : 50px 0;
+}
+.container{
+    background:#fff;
+    border-radius: 10px;
+    /* box-shadow:15px 20px 0px rgba(0,0,0,0.1); */
+}
+.login-sec{
+    padding: 50px 30px;
+    position:relative;
+}
+.login-sec h2{
+    margin-bottom:30px;
+    font-weight:800;
+    font-size:30px;
+    color: #276540;
+}
+.login-sec h2:after{
+    content:" ";
+    width:100px;
+    height:5px;
+    background:#F9D008;
+    display:block;
+    margin-top:20px;
+    border-radius:3px;
+    margin-left:auto;
+margin-right:auto
+}
+.btn-login{
+    background: #276540;
+    color:#fff;
+    font-weight:600;
+}
+
+/* Dashboard Page */
+
+#wrapper{
+    margin-top: 75px; 
+    padding: 35px 15px;
+}
+.navbar-expand-lg .navbar-nav.side-nav{
+    flex-direction: column;
+}
+.card{
+    margin-bottom: 15px;
+    border-radius:0;
+    box-shadow: 0 3px 5px rgba(0,0,0,.1);
+}
+.header-top{
+    box-shadow: 0 3px 5px rgba(0,0,0,.1)
+}
+.leftmenutrigger{
+    display: none
+}
+
+/* Alerts */
+
+/* Transición para la entrada del mensaje flash */
+#msg-flash.entering {
+    opacity: 1;
+    /* transform: translateY(-5%); */
+    transition: opacity 0.5s ease-in;
+}
+
+/* Transición para la salida del mensaje flash */
+#msg-flash.exiting {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+@media only screen and (max-width: 768px) {
+    .img-view {
+        display: none;
+    }
+} 
+
+@media only screen and (max-width: 768px) {
+    .leftmenutrigger{
+        display: block;
+        display: block;
+        margin: 7px 20px 4px 0;
+        cursor: pointer;
+    }
+    #wrapper{
+        padding: 90px 15px 15px 15px;
+    }
+    .navbar-nav.side-nav.open {
+        left:0;
+    }
+    .navbar-nav.side-nav{
+        background: #585f66;
+        box-shadow: 2px 1px 2px rgba(0,0,0,.1);
+        position:fixed;
+        top:56px;
+        flex-direction: column!important;
+        left:-220px;
+        width:200px;
+        overflow-y:auto;
+        bottom:0;
+        overflow-x:hidden;
+        padding-bottom:40px
+    }
+}

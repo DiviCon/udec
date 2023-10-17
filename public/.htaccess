@@ -1,0 +1,26 @@
+<IfModule mod_rewrite.c>
+# Introducción y configuración de mod_rewrite
+# La función principal de Rewirte es redirigir y ocultar direcciones URL reales,
+# basándose en expresiones regulares en lenguaje Perl.
+# Normalmente nos ayuda a lograr simulación de estática, simulación de directorios,
+# redirección de dominios, prevención de hotlinking, entre otras cosas.
+  Options -Multiviews
+
+# Habilitar el motor de Rewrite
+  RewriteEngine On
+
+# Si la aplicación se encuentra en /master/public
+  RewriteBase /udec/public
+
+# Condición de coincidencia (si es un directorio o archivo, accede directamente,
+# sin aplicar las siguientes RewriteRules)
+# %{REQUEST_FILENAME} es el nombre del archivo solicitado
+# !-d significa que no es un directorio o no existe
+# !-f significa que no es un archivo o no existe
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-f
+
+# Reglas de reescritura pseudoestáticas para Apache e IIS
+# [L] indica que esta es la última regla de coincidencia y no se seguirán aplicando más
+  RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
+</IfModule>
