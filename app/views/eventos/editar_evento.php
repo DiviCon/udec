@@ -29,7 +29,7 @@
                         <div class="card-body">
                             <div class="row px-5">         
                                 <div >
-                                    <p class="text-sm-left text-muted"><span class="text-danger">*</span> Si desea modificar alguna fecha, debe seleccionar primero el tipo de fecha que desea para activa el calendario.</p>
+                                    <p class="text-sm-left text-muted"><span class="text-danger">*</span> Para realizar cambios en una fecha específica, primero selecciona el tipo de fecha que deseas para activar el calendario.</p>
                                 </div>                         
                                 <div class="form-group col-sm-12 col-md-6">
                                     <input type="hidden" name="inputTipo" value="<?= $data['evento']->tipo ?>">
@@ -78,6 +78,7 @@
                                 <div class="form-group col-sm-12 col-md-12">
                                     <label for="inputEvidencia" class="col-form-label-sm">Evidencia </label> 
                                     <textarea class="form-control form-control-sm" name="inputEvidencia" id="inputEvidencia" cols="30" rows="3" ><?php echo $data['evento']->evidencia ?></textarea>
+                                    <small> <a href="<?php echo $data['evento']->evidencia ?>" target="_blank">-> Ir a la evidencia</a></small>
                                 </div> 
                                 <div class="form-group col-sm-12 col-md-12">
                                         <label for="inputResponsable" class="col-form-label-sm">Responsable(s) </label>                                       

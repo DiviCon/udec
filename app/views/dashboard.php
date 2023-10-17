@@ -43,7 +43,7 @@
                                 <?php $no = 1; foreach($data['eventos'] as $evento) : ?>
                                     <tr class="unread">
                                         <td class="inbox-small-cells"><?php echo $no++ ?></td>
-                                        <td class=""><a href="#" class="text-sm text-dark"><?php echo $evento->actividad ?></a></td>
+                                        <td class=""><a href="<?php echo $evento->evidencia ?>" class="text-sm text-dark" target="_blank"><?php echo $evento->actividad ?></a></td>
                                         <td class="text-center"><?php echo $evento->estado == 'completo' ? '<span class="badge badge-success p-2">Completo</span>' : ($evento->estado == 'pendiente' ? '<span class="badge badge-danger p-2">Pendiente</span>' : '<span class="badge badge-warning p-3">Urgente</span>') ?></td>
                                         <td class="text-sm text-dark text-right"><?php echo date('d-m-Y', strtotime($evento->fecha_registro)) ?></td>
                                         <td>
