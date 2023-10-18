@@ -26,7 +26,7 @@
                     <div class="card-body">                        
                         <div class="text-center mb-3">
                             <a href="<?= URLROOT ?>/dashboard/nuevo_evento" class="btn btn-primary btn-sm">Registrar Nueva Actividad</a>
-                            <a href="<?= URLROOT ?>/dashboard/exportar" class="btn btn-info btn-sm" download>Exportar Actividades en JSON</a>
+                            <!-- <a href="<?= URLROOT ?>/dashboard/exportar" class="btn btn-info btn-sm" download>Exportar Actividades en JSON</a> -->
                         </div>
 
                         <table class="table table-inbox table-hover table-bordered responsive">
