@@ -248,8 +248,8 @@ class Dashboard extends Controller
             
             $json_data = json_encode($formattedData, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
             
-            header('Content-Type: application/json; charset=UTF-8');
-            header('Content-Disposition: attachment; filename="datos.json"');
+            // header('Content-Type: application/json; charset=UTF-8');
+            // header('Content-Disposition: attachment; filename="datos.json"');
             
             echo $json_data;
 

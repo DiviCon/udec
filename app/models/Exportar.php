@@ -11,7 +11,7 @@ class Exportar
 
     public function obtenerDatos()
     {
-        $id = $_SESSION['user_id'];
+        // $id = $_SESSION['user_id'];
         $sql = 'SELECT * FROM eventos';
         $this->db->query($sql);
         // $this->db->bind(':id_usuario', $id);

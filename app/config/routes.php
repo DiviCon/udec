@@ -12,5 +12,6 @@ return [
     'dashboard/guardar_evento' => ['controller' => 'Dashboard', 'method' => 'guardar_evento'],
     'dashboard/exportar' => ['controller' => 'Dashboard', 'method' => 'exportar'],
     'dashboard/editar_evento/{id}' => ['controller' => 'Dashboard', 'method' => 'editar_evento'],
-    'dashboard/guardar_cambios/{id}' => ['controller' => 'Dashboard', 'method' => 'guardar_cambios']
+    'dashboard/guardar_cambios/{id}' => ['controller' => 'Dashboard', 'method' => 'guardar_cambios'],
+    'export' => ['controller' => 'Export', 'method' => 'index']
 ];
