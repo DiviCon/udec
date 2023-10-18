@@ -10,7 +10,7 @@
   RewriteEngine On
 
 # Si la aplicación se encuentra en /master/public
-  RewriteBase /udec/public
+  # RewriteBase /udec/public // Aquí genera problemas en un servidor
 
 # Condición de coincidencia (si es un directorio o archivo, accede directamente,
 # sin aplicar las siguientes RewriteRules)

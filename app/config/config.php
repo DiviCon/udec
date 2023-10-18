@@ -3,7 +3,7 @@
     // Site Name, Project Name Local, Project Name Remote y App Version
     define('SITENAME', 'UdeC');
     define('PROJECT_LOCAL', 'udec');
-    define('PROJECT_REMOTE', 'udec');
+    define('PROJECT_REMOTE', 'nombre_dominio');
     define('APPVERSION', '0.2.0');
 
     // App Root y URL Root
@@ -18,7 +18,7 @@
     }
 
     // Controlador por defecto y Metodo por defecto
-    define('DEFAULT_CONTROLLER', 'Auth');
+    define('DEFAULT_CONTROLLER', 'auth');
     define('DEFAULT_METHOD', 'index');
 
     // Configuracion de la base de datos

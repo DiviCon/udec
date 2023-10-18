@@ -35,7 +35,7 @@ class Dashboard extends Controller
             'eventos' => $this->evento_model->getAll()
         ];
         
-        $this->view('Dashboard', $data);
+        $this->view('dashboard', $data);
     }
 
     /*

@@ -28,6 +28,7 @@ CREATE TABLE `eventos` (
   CONSTRAINT `eventos_ibfk_1` FOREIGN KEY (`id_usuario`) REFERENCES `usuarios` (`id_usuario`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+<<<<<<< HEAD
 INSERT INTO `eventos` (`id`, `tipo`, `valor`, `inicio`, `fin`, `valores`, `actividad`, `porcentaje`, `evidencia`, `responsable`, `estado`, `id_usuario`, `fecha_registro`, `fecha_actualizacion`) VALUES
 (1,	'unico',	'2023-10-02',	NULL,	NULL,	NULL,	'Verificación de apertura de aplicativos institucionales.',	'1.66',	'https://mailunicundiedu-my.sharepoint.com/:f:/g/personal/desarrolloacademicoaunclic_ucundinamarca_edu_co/EmfgxZ1my2hJhYMe8a5riEoB2DU23BkyUOlwmgmouaTcig?e=PpeeYL',	'Dirección de Sistemas y Tecnología, Oficina Desarrollo Académico',	'completo',	1,	'2023-10-02 00:00:00',	NULL),
 (2,	'rango',	NULL,	'2023-10-03',	'2023-10-04',	NULL,	'Revisión en el aplicativo de los grupos del 2024-1 para el registro de grupos, cupos y horarios para núcleos temáticos y campos de aprendizaje disciplinares.',	'3.32',	'https://mailunicundiedu-my.sharepoint.com/:f:/g/personal/desarrolloacademicoaunclic_ucundinamarca_edu_co/Ejoit4P7hi1Po0PCuRc3TFcBW-ySucvbYw5Pzt9Geuqw7w?e=ua7b8V',	'Dirección de Sistemas y Tecnología',	'completo',	1,	'2023-10-02 00:00:00',	NULL),
@@ -89,6 +90,8 @@ INSERT INTO `eventos` (`id`, `tipo`, `valor`, `inicio`, `fin`, `valores`, `activ
 (58,	'Rango',	NULL,	'2024-02-01',	'2024-02-02',	NULL,	'Verificación asignación Espacios Académicos.',	'96,28',	'https://mailunicundiedu-my.sharepoint.com/:f:/g/personal/desarrolloacademicoaunclic_ucundinamarca_edu_co/Eu5DMjGYRaBBgr4p76sHShUBqTDn6x9DeA_vZPR7UNftGg?e=7FsUFb',	'Unidad de Apoyo Académico.',	'completo',	1,	'2023-10-17 00:00:00',	NULL),
 (59,	'Rango',	NULL,	'2024-02-01',	'2024-02-02',	NULL,	'Mesa de trabajo permanente.',	'98,14',	'https://mailunicundiedu-my.sharepoint.com/:f:/g/personal/desarrolloacademicoaunclic_ucundinamarca_edu_co/EsKt2kpsMAlBqygoVKjIujkBRLSrQfz2J8NFJEObgzganw?e=TgUtF3',	'Dirección de Sistemas y Tecnología, Oficina de Educación Virtual y a Distancia, Oficina Desarrollo Académico.',	'completo',	1,	'2023-10-17 00:00:00',	NULL),
 (60,	'Unico',	'2024-02-05',	NULL,	NULL,	NULL,	'Inicio de clases.',	'100',	'https://mailunicundiedu-my.sharepoint.com/:f:/g/personal/desarrolloacademicoaunclic_ucundinamarca_edu_co/Em19bOORfN1DhFqwJ5ipVU4B6U2wYI8ITB1haOrC1lwckw?e=la49F2',	'Vicerrectoría Académica,Vicerrectoría Administrativa y Financiera, Decanaturas de Facultad, Coordinaciones y Direcciones programas y Dirección de Bienestar Universitario.',	'completo',	1,	'2023-10-17 00:00:00',	NULL);
+=======
+>>>>>>> 072d211e1659f0b3923a7f8057525e25db094ac0
 
 DROP TABLE IF EXISTS `usuarios`;
 CREATE TABLE `usuarios` (
@@ -101,7 +104,12 @@ CREATE TABLE `usuarios` (
   PRIMARY KEY (`id_usuario`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+<<<<<<< HEAD
 INSERT INTO `usuarios` (`id_usuario`, `nombre_usuario`, `apellidos_usuario`, `email_usuario`, `password_usuario`, `fecha_creado`) VALUES
 (1,	'Super',	'Admin',	'admin@ucundinamarca.edu.co',	'$2y$10$FHJ3d6PbMfvWbdrUWfiel.3Lyo/1u8bYLDYSXMHu3RQuLHRaV91tG',	'2023-10-17 20:50:52');
 
 -- 2023-10-17 21:33:16
+=======
+
+-- 2023-10-17 20:06:30
+>>>>>>> 072d211e1659f0b3923a7f8057525e25db094ac0
