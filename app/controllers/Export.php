@@ -44,7 +44,20 @@ class Export extends Controller
                     $formattedItem['fecha']['fin'] = date("d-m-Y", strtotime($item->fin));
                 } elseif ($item->tipo == 'varios') {
                     $formattedItem['fecha']['tipo'] = 'varios';
-                    $formattedItem['fecha']['valores'] = explode(', ', date("d-m-Y", strtotime($item->valores)));
+                    $fechas_array = explode(", ", $item->valores);
+
+                    // Inicializa un array para almacenar las fechas formateadas
+                    $fechas_formateadas = array();
+
+                    // Itera a través de las fechas y las formatea
+                    foreach ($fechas_array as $fecha) {
+                        $fecha_formateada = date("d-m-Y", strtotime($fecha));
+                        $fechas_formateadas[] = $fecha_formateada;
+                    }
+
+                    // Convierte el array de fechas formateadas nuevamente a una cadena
+                    $formattedItem['fecha']['valores'] = implode(", ", $fechas_formateadas);
+                    // $formattedItem['fecha']['valores'] = date("d-m-Y", strtotime($item->valores));
                 }
 
                 $formattedData[] = $formattedItem;
