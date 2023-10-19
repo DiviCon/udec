@@ -82,7 +82,6 @@
                                         <option value="0">Seleccione un estado</option>
                                         <option value="1">Completo</option>
                                         <option value="2">Pendiente</option>
-                                        <option value="3">Urgente</option>
                                     </select>
                                 </div>
                             </div>

@@ -89,7 +89,6 @@
                                     <select class="form-control form-control-sm" name="inputEstado" id="inputEstado" >
                                         <option value="1" <?= $data['evento']->estado == 1 ?? 'selected' ?>>Completo</option>
                                         <option value="2" <?= $data['evento']->estado == 2 ?? 'selected' ?>>Pendiente</option>
-                                        <option value="3" <?= $data['evento']->estado == 3 ?? 'selected' ?>>Urgente</option>
                                     </select>
                                 </div>
                             </div>
