@@ -37,14 +37,14 @@ class Export extends Controller
                 
                 if ($item->tipo == 'unico') {
                     $formattedItem['fecha']['tipo'] = 'unico';
-                    $formattedItem['fecha']['valor'] = $item->valor;
+                    $formattedItem['fecha']['valor'] = date("d-m-Y", strtotime($item->valor));
                 } elseif ($item->tipo == 'rango') {
                     $formattedItem['fecha']['tipo'] = 'rango';
-                    $formattedItem['fecha']['inicio'] = $item->inicio;
-                    $formattedItem['fecha']['fin'] = $item->fin;
+                    $formattedItem['fecha']['inicio'] = date("d-m-Y", strtotime($item->inicio));
+                    $formattedItem['fecha']['fin'] = date("d-m-Y", strtotime($item->fin));
                 } elseif ($item->tipo == 'varios') {
                     $formattedItem['fecha']['tipo'] = 'varios';
-                    $formattedItem['fecha']['valores'] = explode(', ', $item->valores);
+                    $formattedItem['fecha']['valores'] = explode(', ', date("d-m-Y", strtotime($item->valores)));
                 }
 
                 $formattedData[] = $formattedItem;
